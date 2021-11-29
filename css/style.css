@@ -20,6 +20,11 @@ h1 {
     text-align: center;
 }
 
+#stories {
+    height: 60vh;
+    overflow: auto;
+}
+
 #container_second {
     display: flex;
     justify-content: space-between;
@@ -41,5 +46,12 @@ h1 {
 @media screen and (max-width: 635px) {
     img {
         display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #stories {
+        overflow: visible;
+        height: unset;
     }
 }
